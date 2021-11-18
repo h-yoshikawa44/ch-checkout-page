@@ -41,5 +41,8 @@
     "./**/*.{html,js,ts,json}": [
       "prettier --write --loglevel=error"
     ]
+  },
+  "dependencies": {
+    "focus-visible": "^5.2.0"
   }
 }
