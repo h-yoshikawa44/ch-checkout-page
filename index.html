@@ -45,16 +45,20 @@
                   <div>
                     <h4 class="item-list__item-name">Vintage Backbag</h4>
                     <p>
-                      <strong class="item-list__item-sale-price">$54.99</strong>
+                      <strong
+                        id="vintage-backbag-sale-price"
+                        class="item-list__item-sale-price"
+                        >$54.99</strong
+                      >
                       <s class="item-list__item-price">$94.99</s>
                     </p>
                   </div>
                   <div class="item-list__item-amount">
-                    <button type="button">
+                    <button id="vintage-backbag-minus" type="button">
                       <span class="material-icons"> remove </span>
                     </button>
-                    <span>1</span>
-                    <button type="button">
+                    <span id="vintage-backbag-num">1</span>
+                    <button id="vintage-backbag-plus" type="button">
                       <span class="material-icons"> add </span>
                     </button>
                     <input type="hidden" name="vintage-backbag" value="1" />
@@ -69,16 +73,20 @@
                   <div>
                     <h4 class="item-list__item-name">Levi Shoes</h4>
                     <p>
-                      <strong class="item-list__item-sale-price">$74.99</strong>
+                      <strong
+                        id="levi-shoes-sale-price"
+                        class="item-list__item-sale-price"
+                        >$74.99</strong
+                      >
                       <s class="item-list__item-price">$124.99</s>
                     </p>
                   </div>
                   <div class="item-list__item-amount">
-                    <button type="button">
+                    <button id="levi-shoes-minus" type="button">
                       <span class="material-icons"> remove </span>
                     </button>
-                    <span>1</span>
-                    <button type="button">
+                    <span id="levi-shoes-num">1</span>
+                    <button id="levi-shoes-plus" type="button">
                       <span class="material-icons"> add </span>
                     </button>
                     <input type="hidden" name="levi-shoes" value="1" />
@@ -88,11 +96,11 @@
             </ul>
             <p class="item-form__calc-block">
               <span class="item-form__calc-name">Shipping</span>
-              <span class="item-form__calc-value">$19</span>
+              <span id="shipping" class="item-form__calc-value">$19</span>
             </p>
             <p class="item-form__calc-block">
               <span class="item-form__calc-name">Total</span>
-              <span class="item-form__calc-value">$148.98</span>
+              <span id="total" class="item-form__calc-value">$148.98</span>
             </p>
           </div>
         </div>
