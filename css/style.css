@@ -150,6 +150,8 @@ a {
   display: inline-flex;
   padding: 2px;
   cursor: pointer;
+  background-color: var(--gray5);
+  border: none;
 }
 
 .item-list .item-list__item-amount .material-icons {
