@@ -48,6 +48,10 @@ a {
 /* header
 -------------------- */
 
+.header {
+  margin-top: 64px;
+}
+
 .header__page-title {
   font-family: var(--font-montserrat);
   font-size: 36px;
@@ -137,7 +141,7 @@ a {
   align-items: center;
   justify-content: space-between;
   max-width: 80%;
-  padding: 8px;
+  padding: 12px;
   border: 1px solid var(--gray3);
   border-radius: 12px;
 }
@@ -219,6 +223,7 @@ a {
   display: flex;
   align-items: center;
   padding: 12px;
+  margin-top: 4px;
   border: 1px solid var(--gray3);
   border-radius: 12px;
 }
@@ -236,6 +241,7 @@ a {
 /* stylelint-disable-next-line no-descending-specificity */
 .input-form .material-icons {
   font-size: 18px;
+  color: var(--gray3);
 }
 
 .input-form .input-form__custom-input input,
@@ -245,6 +251,10 @@ a {
   margin-left: 8px;
   border: none;
   outline: none;
+}
+
+.input-form .input-form__custom-input input::placeholder {
+  color: var(--gray3);
 }
 
 .input-form .input-form__split-column {
@@ -296,4 +306,74 @@ a {
   font-weight: 700;
   line-height: 17px;
   color: var(--gray3);
+}
+
+/* mobile
+-------------------- */
+
+@media (max-width: 600px) {
+  /* common */
+
+  .container {
+    padding: 0 3%;
+  }
+
+  /* header */
+  .header {
+    margin-top: 32px;
+  }
+
+  .header__page-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  /* main */
+
+  .form-layout {
+    flex-direction: column;
+    margin: 24px 0;
+  }
+
+  /* main item-form */
+
+  .item-list .item-list__item-name {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .item-list .item-list__item-sale-price {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .item-list .item-list__item-price {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .item-form .item-form__calc-name {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* main input-form */
+
+  .input-form {
+    margin-top: 36px;
+  }
+
+  .input-form legend {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .input-form label {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .input-form .input-form__submit-button {
+    padding: 16px 44px;
+  }
 }
