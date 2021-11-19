@@ -3,6 +3,7 @@
   "less.validate": false,
   "scss.validate": false,
   "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
   "editor.formatOnSave": false,
@@ -11,6 +12,12 @@
     "editor.formatOnSave": true
   },
   "[css]": {
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
     "editor.formatOnSave": true
   },
   "html-css-class-completion.enableEmmetSupport": true

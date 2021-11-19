@@ -13,19 +13,211 @@
       rel="stylesheet"
       href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
     />
-    <!-- <link
+    <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
-    /> -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,600;1,700&display=swap"
       rel="stylesheet"
-    /> -->
-    <link rel="stylesheet" href="/css/style.css" />
+    />
   </head>
   <body>
-    <p>test</p>
+    <header class="container header">
+      <h1 class="header__page-title">Checkout</h1>
+    </header>
+    <main class="container">
+      <form id="checkout-form" action="#" class="form-layout">
+        <div>
+          <div class="item-form">
+            <ul class="item-list">
+              <li class="item-list__item">
+                <p class="item-list__item-img-block">
+                  <img src="./images/photo1.png" alt="Vintage Backbag Image" />
+                </p>
+                <div class="item-list__item-info">
+                  <div>
+                    <h4 class="item-list__item-name">Vintage Backbag</h4>
+                    <p>
+                      <strong
+                        id="vintage-backbag-sale-price"
+                        class="item-list__item-sale-price"
+                        >$54.99</strong
+                      >
+                      <s class="item-list__item-price">$94.99</s>
+                    </p>
+                  </div>
+                  <div class="item-list__item-amount">
+                    <button id="vintage-backbag-minus" type="button">
+                      <span class="material-icons"> remove </span>
+                    </button>
+                    <span id="vintage-backbag-num">1</span>
+                    <button id="vintage-backbag-plus" type="button">
+                      <span class="material-icons"> add </span>
+                    </button>
+                    <input type="hidden" name="vintage-backbag" value="1" />
+                  </div>
+                </div>
+              </li>
+              <li class="item-list__item">
+                <p class="item-list__item-img-block">
+                  <img src="./images/photo2.png" alt="Levi Shoes Image" />
+                </p>
+                <div class="item-list__item-info">
+                  <div>
+                    <h4 class="item-list__item-name">Levi Shoes</h4>
+                    <p>
+                      <strong
+                        id="levi-shoes-sale-price"
+                        class="item-list__item-sale-price"
+                        >$74.99</strong
+                      >
+                      <s class="item-list__item-price">$124.99</s>
+                    </p>
+                  </div>
+                  <div class="item-list__item-amount">
+                    <button id="levi-shoes-minus" type="button">
+                      <span class="material-icons"> remove </span>
+                    </button>
+                    <span id="levi-shoes-num">1</span>
+                    <button id="levi-shoes-plus" type="button">
+                      <span class="material-icons"> add </span>
+                    </button>
+                    <input type="hidden" name="levi-shoes" value="1" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <p class="item-form__calc-block">
+              <span class="item-form__calc-name">Shipping</span>
+              <span id="shipping" class="item-form__calc-value">$19</span>
+            </p>
+            <p class="item-form__calc-block">
+              <span class="item-form__calc-name">Total</span>
+              <span id="total" class="item-form__calc-value">$148.98</span>
+            </p>
+          </div>
+        </div>
+        <div class="input-form">
+          <fieldset>
+            <legend>Contact infomation</legend>
+            <label>
+              E-mail
+              <div class="input-form__custom-input">
+                <span class="material-icons"> email </span>
+                <input
+                  type="email"
+                  name="email"
+                  pattern="^[a-zA-Z0-9_+-]+(.[a-zA-Z0-9_+-]+)*@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
+                  title="有効なメールアドレス書式で入力してください.。例：example@gmail.com"
+                  placeholder="Enter your email..."
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </label>
+            <label>
+              Phone
+              <div class="input-form__custom-input">
+                <span class="material-icons"> phone </span>
+                <input
+                  type="tel"
+                  name="phone"
+                  pattern="^\d{2,4}-\d{3,4}-\d{3,4}"
+                  title="有効な電話番号書式（ハイフン区切り）で入力してください。例： 090-0000-0000"
+                  placeholder="Enter your phone...(hyphenation)"
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Shipping address</legend>
+            <label>
+              Full name
+              <div class="input-form__custom-input">
+                <span class="material-icons"> account_circle </span>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name..."
+                  autocomplete="name"
+                  required
+                />
+              </div>
+            </label>
+            <label>
+              Address
+              <div class="input-form__custom-input">
+                <span class="material-icons"> home </span>
+                <input
+                  type="text"
+                  name="address"
+                  placeholder="Your address..."
+                  required
+                />
+              </div>
+            </label>
+            <label>
+              City
+              <div class="input-form__custom-input">
+                <span class="material-icons"> apartment </span>
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="Your city..."
+                  required
+                />
+              </div>
+            </label>
+            <div class="input-form__split-column">
+              <label>
+                Country
+                <div class="input-form__custom-input">
+                  <span class="material-icons"> public </span>
+                  <select name="country" required>
+                    <option value="">Your country...</option>
+                    <option value="japan">Japan</option>
+                    <option value="us">US</option>
+                    <option value="china">China</option>
+                  </select>
+                </div>
+              </label>
+              <label>
+                Postal code
+                <div class="input-form__custom-input">
+                  <span class="material-icons"> markunread_mailbox </span>
+                  <input
+                    type="text"
+                    name="postal-code"
+                    pattern="\d{3}-\d{4}"
+                    title="有効な郵便番号書式（ハイフン区切り）で入力してください。例：819-0000"
+                    placeholder="Your postal code..(hyphenation)"
+                    autocomplete="postal-code"
+                    required
+                  />
+                </div>
+              </label>
+            </div>
+            <label class="input-form__checkbox-label">
+              <input type="checkbox" class="input-form__checkbox" />
+              Save this information for next time
+            </label>
+            <button type="submit" class="input-form__submit-button">
+              Continue
+            </button>
+          </fieldset>
+        </div>
+      </form>
+    </main>
+    <footer id="footer" class="footer">
+      <small class="footer__signature">
+        created by h-yoshikawa44 - devChallenges.io</small
+      >
+    </footer>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
