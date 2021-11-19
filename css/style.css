@@ -277,6 +277,11 @@ a {
   width: 20px;
   height: 20px;
   margin-right: 8px;
+  outline: none;
+}
+
+.input-form input.input-form__checkbox:focus {
+  box-shadow: 0 0 4px var(--orange);
 }
 
 .input-form .input-form__submit-button {
