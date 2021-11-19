@@ -8,10 +8,10 @@
 
 <div align="center">
   <h3>
-    <!-- <a href="https://{your-demo-link.your-domain}">
+    <a href="https://h-yoshikawa44.github.io/ch-checkout-page/">
       Demo
     </a>
-    <span> | </span> -->
+    <span> | </span>
     <!-- <a href="https://{your-url-to-the-solution}">
       Solution
     </a>
@@ -28,6 +28,8 @@
 
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
+  - [Desktop](#desktop)
+  - [Mobile](#mobile)
   - [Built With](#built-with)
 - [Features](#features)
 - [How To Use](#how-to-use)
@@ -38,8 +40,11 @@
 <!-- OVERVIEW -->
 
 ## Overview
+### Desktop
+![overview - desktop](/screenshots/desktop.png)
 
-(※in preparation)
+### Mobile
+<img src="/screenshots/mobile.png" alt="overview - mobile" width="35%">
 
 ### Built With
 
@@ -48,8 +53,14 @@
 Base
 - [HTML](https://developer.mozilla.org/ja/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/ja/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/ja/docs/Web/JavaScript)
 - [Node.js](https://nodejs.org/)：16.13.0
 - [Vite](https://ja.vitejs.dev/)：2.6.4
+
+Other major libraries
+- [focus-visible](https://github.com/WICG/focus-visible)
+
+※As for the form validation, it is done using HTML only.
 
 ## Features
 
@@ -57,16 +68,16 @@ Base
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the given user stories.
 
-- [ ] User story: I can see a page following the given design
-- [ ] User story: I can input email, phone, full name, address, city, country, and postal code
-- [ ] User story: I can input the number of items
-- [ ] User story: I can select at least 3 countries from the dropdown
-- [ ] User story: When I click submit button or press enter, I can see a warning if validation fails
-- [ ] User story: When I click submit button or press enter, I can see a successful alert if validation succeeds
+- [x] User story: I can see a page following the given design
+- [x] User story: I can input email, phone, full name, address, city, country, and postal code
+- [x] User story: I can input the number of items
+- [x] User story: I can select at least 3 countries from the dropdown
+- [x] User story: When I click submit button or press enter, I can see a warning if validation fails
+- [x] User story: When I click submit button or press enter, I can see a successful alert if validation succeeds
 
 ## How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [yarn](https://yarnpkg.com/)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
@@ -82,13 +93,18 @@ $ yarn dev
 ```
 
 ## learned/improved
-(※in preparation)
+- about the different types of autocomplete.
+- Validation Processing in HTML.
 
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
-(※in preparation)
+- [MDN - input: 入力欄 (フォーム入力) 要素](https://developer.mozilla.org/ja/docs/Web/HTML/Element/input)
+- [MDN - クライアント側のフォームデータ検証](https://developer.mozilla.org/ja/docs/Learn/Forms/Form_validation)
+- [Twitter - @pulpxstyle - ユーザーに優しいオートコンプリート](https://twitter.com/pulpxstyle/status/1459491270833807362?s=20)
+- [HTML5におけるinput要素のpattern、type属性のおさらい](https://qiita.com/ka215/items/795a179041c705bef03b)
+- [【JavaScript】桁指定して四捨五入・切り上げ・切り捨て](https://qiita.com/nagito25/items/0293bc317067d9e6c560)
 
 ## Contact
 

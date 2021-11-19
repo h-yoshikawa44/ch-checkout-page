@@ -20,5 +20,5 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
-      - name: StyleLint & Prettier
+      - name: ESlint & StyleLint & Prettier
         run: yarn lint-check
