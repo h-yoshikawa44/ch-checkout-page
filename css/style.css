@@ -266,6 +266,19 @@ a {
   justify-content: space-between;
 }
 
+.input-form .input-form__checkbox-label {
+  display: flex;
+  align-items: center;
+  line-height: 12px;
+}
+
+.input-form .input-form__checkbox {
+  accent-color: var(--orange);
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
 .input-form .input-form__submit-button {
   display: block;
   padding: 16px 40px;
@@ -373,6 +386,10 @@ a {
   .input-form label {
     font-size: 10px;
     line-height: 12px;
+  }
+
+  .input-form .input-form__checkbox-label {
+    line-height: 10px;
   }
 
   .input-form .input-form__submit-button {
