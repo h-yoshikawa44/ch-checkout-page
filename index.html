@@ -29,7 +29,11 @@
       <h1 class="header__page-title">Checkout</h1>
     </header>
     <main class="container">
-      <form action="" class="form-layout">
+      <form
+        action="#"
+        class="form-layout"
+        onsubmit="alert('submit success!'); return false;"
+      >
         <div>
           <div class="item-form">
             <ul class="item-list">
@@ -102,8 +106,11 @@
                 <input
                   type="email"
                   name="email"
+                  pattern="^[a-zA-Z0-9_+-]+(.[a-zA-Z0-9_+-]+)*@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
+                  title="有効なメールアドレス書式で入力してください.。例：example@gmail.com"
                   placeholder="Enter your email..."
                   autocomplete="email"
+                  required
                 />
               </div>
             </label>
@@ -114,8 +121,11 @@
                 <input
                   type="tel"
                   name="phone"
-                  placeholder="Enter your phone..."
+                  pattern="^\d{2,4}-\d{3,4}-\d{3,4}"
+                  title="有効な電話番号書式（ハイフン区切り）で入力してください。例： 090-0000-0000"
+                  placeholder="Enter your phone...(hyphenation)"
                   autocomplete="tel"
+                  required
                 />
               </div>
             </label>
@@ -131,6 +141,7 @@
                   name="name"
                   placeholder="Your name..."
                   autocomplete="name"
+                  required
                 />
               </div>
             </label>
@@ -142,6 +153,7 @@
                   type="text"
                   name="address"
                   placeholder="Your address..."
+                  required
                 />
               </div>
             </label>
@@ -149,7 +161,12 @@
               City
               <div class="input-form__custom-input">
                 <span class="material-icons"> apartment </span>
-                <input type="text" name="city" placeholder="Your city..." />
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="Your city..."
+                  required
+                />
               </div>
             </label>
             <div class="input-form__split-column">
@@ -157,8 +174,8 @@
                 Country
                 <div class="input-form__custom-input">
                   <span class="material-icons"> public </span>
-                  <select name="country">
-                    <option value="" selected>Your country...</option>
+                  <select name="country" required>
+                    <option value="">Your country...</option>
                     <option value="japan">Japan</option>
                     <option value="us">US</option>
                     <option value="china">China</option>
@@ -172,8 +189,11 @@
                   <input
                     type="text"
                     name="postal-code"
-                    placeholder="Your postal code.."
+                    pattern="\d{3}-\d{4}"
+                    title="有効な郵便番号書式（ハイフン区切り）で入力してください。例：819-0000"
+                    placeholder="Your postal code..(hyphenation)"
                     autocomplete="postal-code"
+                    required
                   />
                 </div>
               </label>
