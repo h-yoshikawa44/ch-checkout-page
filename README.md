@@ -12,10 +12,10 @@
       Demo
     </a>
     <span> | </span>
-    <!-- <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/SFmxGtHXWkESKZbSrg67">
       Solution
     </a>
-    <span> | </span> -->
+    <span> | </span>
     <a href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO">
       Challenge
     </a>
@@ -58,6 +58,7 @@ Base
 - [Vite](https://ja.vitejs.dev/)：2.6.4
 
 Other major libraries
+- [material-design-icons](https://google.github.io/material-design-icons/)
 - [focus-visible](https://github.com/WICG/focus-visible)
 
 ※As for the form validation, it is done using HTML only.
