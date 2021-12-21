@@ -61,7 +61,7 @@ Other major libraries
 - [material-design-icons](https://google.github.io/material-design-icons/)
 - [focus-visible](https://github.com/WICG/focus-visible)
 
-※As for the form validation, it is done using HTML only.
+※As for the form validation, it is done using HTML only.  
 ※The pattern validation for Phone and Postal code is based on Japanese specifications.
 
 ## Features
