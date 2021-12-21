@@ -125,12 +125,13 @@
               Phone
               <div class="input-form__custom-input">
                 <span class="material-icons"> phone </span>
+                <!-- バリデーションは日本仕様 -->
                 <input
                   type="tel"
                   name="phone"
-                  pattern="^\d{2,4}-\d{3,4}-\d{3,4}"
-                  title="有効な電話番号書式（ハイフン区切り）で入力してください。例： 090-0000-0000"
-                  placeholder="Enter your phone...(hyphenation)"
+                  pattern="^\d{2,4}\d{3,4}\d{3,4}"
+                  title="有効な電話番号書式（ハイフンなし）で入力してください。例： 09012345678"
+                  placeholder="Enter your phone..."
                   autocomplete="tel"
                   required
                 />
@@ -193,12 +194,13 @@
                 Postal code
                 <div class="input-form__custom-input">
                   <span class="material-icons"> markunread_mailbox </span>
+                  <!-- バリデーションは日本仕様 -->
                   <input
-                    type="text"
+                    type="number"
                     name="postal-code"
-                    pattern="\d{3}-\d{4}"
-                    title="有効な郵便番号書式（ハイフン区切り）で入力してください。例：819-0000"
-                    placeholder="Your postal code..(hyphenation)"
+                    pattern="\d{3}\d{4}"
+                    title="有効な郵便番号書式（ハイフンなし）で入力してください。例：8190000"
+                    placeholder="Your postal code.."
                     autocomplete="postal-code"
                     required
                   />
