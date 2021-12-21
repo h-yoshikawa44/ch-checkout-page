@@ -44,7 +44,7 @@
 ![overview - desktop](/screenshots/desktop.png)
 
 ### Mobile
-<img src="/screenshots/mobile.png" alt="overview - mobile" width="35%">
+<img src="./screenshots/mobile.png" alt="overview - mobile" width="35%">
 
 ### Built With
 
@@ -62,6 +62,7 @@ Other major libraries
 - [focus-visible](https://github.com/WICG/focus-visible)
 
 ※As for the form validation, it is done using HTML only.
+※The pattern validation for Phone and Postal code is based on Japanese specifications.
 
 ## Features
 
@@ -96,6 +97,7 @@ $ yarn dev
 ## learned/improved
 - about the different types of autocomplete.
 - Validation Processing in HTML.
+- Input type="tel" in iOS Safari allows only numbers.
 
 ## Acknowledgements
 
