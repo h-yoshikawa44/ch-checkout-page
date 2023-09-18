@@ -273,10 +273,10 @@ a {
 }
 
 .input-form .input-form__checkbox {
-  accent-color: var(--orange);
   width: 20px;
   height: 20px;
   margin-right: 8px;
+  accent-color: var(--orange);
   outline: none;
 }
 
@@ -331,7 +331,7 @@ a {
 /* mobile
 -------------------- */
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   /* common */
 
   .container {
