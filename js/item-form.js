@@ -2,23 +2,23 @@
 const vintageBackbagSalePrice = parseFloat(
   document
     .getElementById('vintage-backbag-sale-price')
-    .textContent.replace('$', '')
+    .textContent.replace('$', ''),
 );
 const leviShoesSalePrice = parseFloat(
-  document.getElementById('levi-shoes-sale-price').textContent.replace('$', '')
+  document.getElementById('levi-shoes-sale-price').textContent.replace('$', ''),
 );
 const shipping = parseInt(
-  document.getElementById('shipping').textContent.replace('$', '')
+  document.getElementById('shipping').textContent.replace('$', ''),
 );
 
 // ----
 
 let vintageBackbagNum = document.getElementById('vintage-backbag-num');
 const vintageBackbagMinusButton = document.getElementById(
-  'vintage-backbag-minus'
+  'vintage-backbag-minus',
 );
 const vintageBackbagPlusButton = document.getElementById(
-  'vintage-backbag-plus'
+  'vintage-backbag-plus',
 );
 
 let leviShoesNum = document.getElementById('levi-shoes-num');
@@ -49,7 +49,7 @@ const calcTotalPrice = () => {
 
   return customRound(
     vintageBackbagTotalPrice + leviShoesTotalPrice + shipping,
-    100
+    100,
   );
 };
 
