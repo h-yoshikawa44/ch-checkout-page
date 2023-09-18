@@ -18,6 +18,9 @@
     "deploy": "npm run build && gh-pages -d dist",
     "prepare": "simple-git-hooks || echo 'Can not set git hooks'"
   },
+  "dependencies": {
+    "focus-visible": "^5.2.0"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "eslint": "^8.2.0",
@@ -35,8 +38,8 @@
     "vite": "^2.6.4"
   },
   "volta": {
-    "node": "16.13.0",
-    "yarn": "1.22.17"
+    "node": "18.17.1",
+    "npm": "9.6.7"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
@@ -52,8 +55,5 @@
     "./**/*.{html,json}": [
       "prettier --write --loglevel=error"
     ]
-  },
-  "dependencies": {
-    "focus-visible": "^5.2.0"
   }
 }
