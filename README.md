@@ -59,7 +59,7 @@ Base
 
 Other major libraries
 - [material-design-icons](https://google.github.io/material-design-icons/)
-- [focus-visible](https://github.com/WICG/focus-visible)
+-  [postcss-preset-env](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env)
 
 ※As for the form validation, it is done using HTML only.  
 ※The pattern validation for Phone and Postal code is based on Japanese specifications.
