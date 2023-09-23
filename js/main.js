@@ -1,5 +1,4 @@
 import '../css/style.css';
-import 'focus-visible';
 
 import './item-form';
 

@@ -307,7 +307,7 @@ a {
   transition: background-color 0.3s;
 }
 
-.input-form .input-form__submit-button:focus:not(.focus-visible) {
+.input-form .input-form__submit-button:focus:not(:focus-visible) {
   outline: none;
 }
 
