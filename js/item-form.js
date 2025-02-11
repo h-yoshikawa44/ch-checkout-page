@@ -13,7 +13,7 @@ const shipping = parseInt(
 
 // ----
 
-let vintageBackbagNum = document.getElementById('vintage-backbag-num');
+const vintageBackbagNum = document.getElementById('vintage-backbag-num');
 const vintageBackbagMinusButton = document.getElementById(
   'vintage-backbag-minus',
 );
@@ -21,11 +21,11 @@ const vintageBackbagPlusButton = document.getElementById(
   'vintage-backbag-plus',
 );
 
-let leviShoesNum = document.getElementById('levi-shoes-num');
+const leviShoesNum = document.getElementById('levi-shoes-num');
 const leviShoesMinusButton = document.getElementById('levi-shoes-minus');
 const leviShoesPlusButton = document.getElementById('levi-shoes-plus');
 
-let total = document.getElementById('total');
+const total = document.getElementById('total');
 
 /**
  * 任意の桁で四捨五入する
@@ -42,10 +42,10 @@ const customRound = (value, digit) => {
  * @returns {number} 購入合計金額
  */
 const calcTotalPrice = () => {
-  const vintageBackbagTotalPrice =
-    vintageBackbagSalePrice * parseInt(vintageBackbagNum.textContent);
-  const leviShoesTotalPrice =
-    leviShoesSalePrice * parseInt(leviShoesNum.textContent);
+  const vintageBackbagTotalPrice
+    = vintageBackbagSalePrice * parseInt(vintageBackbagNum.textContent);
+  const leviShoesTotalPrice
+    = leviShoesSalePrice * parseInt(leviShoesNum.textContent);
 
   return customRound(
     vintageBackbagTotalPrice + leviShoesTotalPrice + shipping,
@@ -61,7 +61,7 @@ const updateTotalPrice = () => {
 };
 
 vintageBackbagMinusButton.addEventListener('click', () => {
-  if (vintageBackbagNum.textContent != 0) {
+  if (vintageBackbagNum.textContent !== '0') {
     vintageBackbagNum.textContent = parseInt(vintageBackbagNum.textContent) - 1;
     updateTotalPrice();
   }
@@ -73,7 +73,7 @@ vintageBackbagPlusButton.addEventListener('click', () => {
 });
 
 leviShoesMinusButton.addEventListener('click', () => {
-  if (leviShoesNum.textContent != 0) {
+  if (leviShoesNum.textContent !== '0') {
     leviShoesNum.textContent = parseInt(leviShoesNum.textContent) - 1;
     updateTotalPrice();
   }
