@@ -42,10 +42,10 @@ const customRound = (value, digit) => {
  * @returns {number} 購入合計金額
  */
 const calcTotalPrice = () => {
-  const vintageBackbagTotalPrice
-    = vintageBackbagSalePrice * parseInt(vintageBackbagNum.textContent);
-  const leviShoesTotalPrice
-    = leviShoesSalePrice * parseInt(leviShoesNum.textContent);
+  const vintageBackbagTotalPrice =
+    vintageBackbagSalePrice * parseInt(vintageBackbagNum.textContent);
+  const leviShoesTotalPrice =
+    leviShoesSalePrice * parseInt(leviShoesNum.textContent);
 
   return customRound(
     vintageBackbagTotalPrice + leviShoesTotalPrice + shipping,
