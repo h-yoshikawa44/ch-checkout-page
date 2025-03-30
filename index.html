@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,21 +14,17 @@
 
     <!-- CSS -->
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
-    />
-    <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,600;1,700&amp;display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/ch-checkout-page/assets/index-eZVj4udZ.js"></script>
-    <link rel="stylesheet" crossorigin href="/ch-checkout-page/assets/index-BerEBcYh.css">
+    <script type="module" crossorigin src="/ch-checkout-page/assets/index-4U6WCzpF.js"></script>
+    <link rel="stylesheet" crossorigin href="/ch-checkout-page/assets/index-DR3vKN-Z.css">
   </head>
   <body>
     <header class="container header">
@@ -41,17 +37,22 @@
             <ul class="item-list">
               <li class="item-list__item">
                 <p class="item-list__item-img-block">
-                  <img src="/ch-checkout-page/assets/photo1-CJ3USZQA.png" alt="Vintage Backbag Image" />
+                  <img
+                    src="/ch-checkout-page/assets/photo1-CJ3USZQA.png"
+                    alt="Vintage Backbag Image"
+                    width="269"
+                    height="273"
+                  />
                 </p>
                 <div class="item-list__item-info">
                   <div>
-                    <h4 class="item-list__item-name">Vintage Backbag</h4>
+                    <p class="item-list__item-name">Vintage Backbag</p>
                     <p>
                       <strong
                         id="vintage-backbag-sale-price"
                         class="item-list__item-sale-price"
-                        >$54.99</strong
-                      >
+                        >$54.99
+                      </strong>
                       <s class="item-list__item-price">$94.99</s>
                     </p>
                   </div>
@@ -69,17 +70,22 @@
               </li>
               <li class="item-list__item">
                 <p class="item-list__item-img-block">
-                  <img src="/ch-checkout-page/assets/photo2-BlClANkk.png" alt="Levi Shoes Image" />
+                  <img
+                    src="/ch-checkout-page/assets/photo2-BlClANkk.png"
+                    alt="Levi Shoes Image"
+                    width="269"
+                    height="273"
+                  />
                 </p>
                 <div class="item-list__item-info">
                   <div>
-                    <h4 class="item-list__item-name">Levi Shoes</h4>
+                    <p class="item-list__item-name">Levi Shoes</p>
                     <p>
                       <strong
                         id="levi-shoes-sale-price"
                         class="item-list__item-sale-price"
-                        >$74.99</strong
-                      >
+                        >$74.99
+                      </strong>
                       <s class="item-list__item-price">$124.99</s>
                     </p>
                   </div>
@@ -111,7 +117,7 @@
             <legend>Contact infomation</legend>
             <label>
               E-mail
-              <div class="input-form__custom-input">
+              <span class="input-form__custom-input">
                 <span class="material-icons"> email </span>
                 <input
                   type="email"
@@ -122,11 +128,11 @@
                   autocomplete="email"
                   required
                 />
-              </div>
+              </span>
             </label>
             <label>
               Phone
-              <div class="input-form__custom-input">
+              <span class="input-form__custom-input">
                 <span class="material-icons"> phone </span>
                 <!-- バリデーションは日本仕様 -->
                 <input
@@ -138,14 +144,14 @@
                   autocomplete="tel"
                   required
                 />
-              </div>
+              </span>
             </label>
           </fieldset>
           <fieldset>
             <legend>Shipping address</legend>
             <label>
               Full name
-              <div class="input-form__custom-input">
+              <span class="input-form__custom-input">
                 <span class="material-icons"> account_circle </span>
                 <input
                   type="text"
@@ -154,11 +160,11 @@
                   autocomplete="name"
                   required
                 />
-              </div>
+              </span>
             </label>
             <label>
               Address
-              <div class="input-form__custom-input">
+              <span class="input-form__custom-input">
                 <span class="material-icons"> home </span>
                 <input
                   type="text"
@@ -166,11 +172,11 @@
                   placeholder="Your address..."
                   required
                 />
-              </div>
+              </span>
             </label>
             <label>
               City
-              <div class="input-form__custom-input">
+              <span class="input-form__custom-input">
                 <span class="material-icons"> apartment </span>
                 <input
                   type="text"
@@ -178,12 +184,12 @@
                   placeholder="Your city..."
                   required
                 />
-              </div>
+              </span>
             </label>
             <div class="input-form__split-column">
               <label>
                 Country
-                <div class="input-form__custom-input">
+                <span class="input-form__custom-input">
                   <span class="material-icons"> public </span>
                   <select name="country" required>
                     <option value="">Your country...</option>
@@ -191,23 +197,23 @@
                     <option value="us">US</option>
                     <option value="china">China</option>
                   </select>
-                </div>
+                </span>
               </label>
               <label>
                 Postal code
-                <div class="input-form__custom-input">
+                <span class="input-form__custom-input">
                   <span class="material-icons"> markunread_mailbox </span>
                   <!-- バリデーションは日本仕様 -->
                   <input
-                    type="number"
+                    type="text"
                     name="postal-code"
-                    pattern="\d{3}\d{4}"
+                    pattern="\d{7}"
                     title="有効な郵便番号書式（ハイフンなし）で入力してください。例：8190000"
                     placeholder="Your postal code.."
                     autocomplete="postal-code"
                     required
                   />
-                </div>
+                </span>
               </label>
             </div>
             <label class="input-form__checkbox-label">
@@ -223,8 +229,8 @@
     </main>
     <footer id="footer" class="footer">
       <small class="footer__signature">
-        created by h-yoshikawa44 - devChallenges.io</small
-      >
+        created by h-yoshikawa44 - devChallenges.io
+      </small>
     </footer>
   </body>
 </html>
