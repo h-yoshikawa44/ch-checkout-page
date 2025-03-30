@@ -98,6 +98,7 @@ a {
 }
 
 .item-list .item-list__item-img-block img {
+  height: auto;
   border-radius: 16px;
 }
 
